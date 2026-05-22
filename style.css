@@ -101,7 +101,40 @@ body{
     moveParticles 25s linear infinite;
 }
 
+/* GLOW ORB */
 
+.hero::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    background:
+    radial-gradient(circle,
+    rgba(0,229,255,0.18),
+    transparent 70%);
+
+    top: -120px;
+
+    right: -120px;
+
+    filter: blur(40px);
+
+    z-index: 0;
+}
+
+
+
+.hero-content{
+
+    position: relative;
+
+    z-index: 2;
+}
 
 /* CURSOR */
 
@@ -224,6 +257,24 @@ body{
     text-align: center;
 
     padding: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(84,120,255,0.18),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(0,229,255,0.12),
+    transparent 30%),
+
+    linear-gradient(
+    to bottom,
+    #050816,
+    #02040d);
 }
 
 
@@ -232,15 +283,22 @@ body{
 
 .hero-content h2{
 
-    font-size: 82px;
+    font-size: 72px;
 
-    line-height: 100px;
+    line-height: 90px;
 
     font-weight: 700;
 
     color: white;
 
     letter-spacing: 2px;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,0.08);
 }
 
 
