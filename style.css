@@ -654,32 +654,81 @@ body{
     0 0 20px rgba(0,229,255,0.8),
     0 0 50px rgba(0,229,255,0.5);
 }
-<!-- ABOUT SECTION -->
+/* ABOUT SECTION */
 
-<section class="about" id="about">
+.about{
 
-    <h2 class="section-title">
-        About Me
-    </h2>
+    padding: 120px 10%;
+}
 
-    <div class="about-container">
 
-        <div class="about-text">
 
-            <p>
-                Hi, I’m Soham — a Class 10 student passionate about robotics, Arduino and futuristic technology 🤖
-            </p>
+/* ABOUT CONTAINER */
 
-            <p>
-                I enjoy building innovative projects, experimenting with electronics and creating smart robotic systems.
-            </p>
+.about-container{
 
-            <p>
-                This website showcases my robotics journey, tutorials and creative projects as I continue learning and building new ideas 🚀
-            </p>
+    display: flex;
 
-        </div>
+    justify-content: center;
 
-    </div>
+    align-items: center;
+}
 
-</section>
+
+
+/* ABOUT BOX */
+
+.about-text{
+
+    max-width: 850px;
+
+    width: 100%;
+
+    padding: 50px;
+
+    border-radius: 25px;
+
+    background:
+    rgba(255,255,255,0.03);
+
+    border:
+    1px solid rgba(0,229,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+    0 0 25px rgba(0,229,255,0.08);
+
+    transition: 0.4s ease;
+
+    text-align: center;
+}
+
+
+
+/* ABOUT HOVER */
+
+.about-text:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow:
+    0 0 35px rgba(0,229,255,0.18);
+}
+
+
+
+/* ABOUT TEXT */
+
+.about-text p{
+
+    font-family: Arial, sans-serif;
+
+    color: #d6d6d6;
+
+    font-size: 22px;
+
+    line-height: 40px;
+
+    margin-bottom: 25px;
+}
