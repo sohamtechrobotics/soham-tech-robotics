@@ -39,15 +39,16 @@ body{
 
     height: 100vh;
 
-    background: #050816;
+    background:
+    radial-gradient(circle at center,
+    #081120,
+    #02040d);
 
     display: flex;
 
     justify-content: center;
 
     align-items: center;
-
-    flex-direction: column;
 
     z-index: 99999;
 
@@ -56,24 +57,162 @@ body{
 
 
 
+/* LOADER CONTENT */
+
+.loader-content{
+
+    text-align: center;
+
+    animation:
+    loaderFade 1.5s ease;
+}
+
+
+
+/* RING */
+
+.loader-ring{
+
+    width: 130px;
+
+    height: 130px;
+
+    border-radius: 50%;
+
+    border:
+    3px solid rgba(255,255,255,0.08);
+
+    border-top:
+    3px solid #00e5ff;
+
+    margin: auto;
+
+    animation:
+    spin 1.5s linear infinite;
+
+    box-shadow:
+    0 0 40px rgba(0,229,255,0.15);
+}
+
+
+
+/* TITLE */
+
 .loader h1{
+
+    margin-top: 40px;
 
     font-size: 52px;
 
     color: white;
 
     letter-spacing: 2px;
+
+    text-shadow:
+    0 0 18px rgba(255,255,255,0.08);
 }
 
 
+
+/* TEXT */
 
 .loader p{
 
     margin-top: 15px;
 
-    color: #a8b2d1;
+    color: #9fb0d1;
+
+    font-size: 17px;
+
+    letter-spacing: 1px;
 
     font-family: Arial, sans-serif;
+}
+
+
+
+/* LOADING BAR */
+
+.loading-bar{
+
+    width: 280px;
+
+    height: 6px;
+
+    margin: 35px auto 0;
+
+    border-radius: 20px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    overflow: hidden;
+}
+
+
+
+/* FILL */
+
+.loading-fill{
+
+    width: 0%;
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+    linear-gradient(
+    to right,
+    #00e5ff,
+    #4facfe);
+
+    animation:
+    loading 2s ease forwards;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes spin{
+
+    100%{
+        transform: rotate(360deg);
+    }
+
+}
+
+
+
+@keyframes loading{
+
+    100%{
+        width: 100%;
+    }
+
+}
+
+
+
+@keyframes loaderFade{
+
+    from{
+
+        opacity: 0;
+
+        transform: scale(0.95);
+
+    }
+
+    to{
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
 }
 
 
