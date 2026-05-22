@@ -1,3 +1,5 @@
+/* LOADER */
+
 window.addEventListener("load", () => {
 
     const loader = document.querySelector(".loader");
@@ -13,6 +15,8 @@ window.addEventListener("load", () => {
 });
 
 
+
+/* TYPING EFFECT */
 
 const text = "From Arduino To Advanced Robotics 🚀";
 
@@ -38,6 +42,8 @@ typeText();
 
 
 
+/* SCROLL REVEAL */
+
 const cards = document.querySelectorAll(".card");
 
 window.addEventListener("scroll", () => {
@@ -57,6 +63,9 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+
 /* CUSTOM CURSOR */
 
 const cursor = document.querySelector(".cursor");
