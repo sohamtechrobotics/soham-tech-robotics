@@ -131,18 +131,15 @@ body{
 
     background:
     linear-gradient(
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.7)),
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.8)),
 
     url('https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2070&auto=format&fit=crop');
 
     background-size: cover;
 
     background-position: center;
-
-    background-attachment: fixed;
 }
-
 
 /* HERO OVERLAY */
 
@@ -165,20 +162,24 @@ body{
 
 .hero-content h2{
 
-    font-size: 85px;
+    font-size: 95px;
 
-    line-height: 105px;
+    line-height: 110px;
 
     color: white;
 
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
     text-shadow:
-    0 0 10px rgba(0,229,255,0.5),
-    0 0 25px rgba(0,229,255,0.3);
+    0 0 15px rgba(0,229,255,0.7),
+    0 0 40px rgba(0,229,255,0.4);
 
-    animation:
-    fadeUp 1.2s ease;
+    position: relative;
+
+    z-index: 2;
 }
-
 
 
 /* HERO PARAGRAPH */
@@ -187,25 +188,31 @@ body{
 
     margin-top: 30px;
 
-    font-size: 22px;
+    font-size: 24px;
 
-    color: #d9d9d9;
+    color: #e0e0e0;
 
-    animation:
-    fadeUp 1.5s ease;
+    max-width: 900px;
+
+    line-height: 40px;
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: Arial, sans-serif;
 }
-
 
 
 /* HERO BUTTON */
 
-.hero-content button{
+.hero-btn{
 
-    margin-top: 40px;
+    display: inline-block;
 
-    padding: 16px 42px;
+    margin-top: 45px;
 
-    border: none;
+    padding: 18px 45px;
 
     border-radius: 50px;
 
@@ -213,19 +220,32 @@ body{
 
     color: black;
 
+    text-decoration: none;
+
     font-size: 18px;
 
     font-weight: bold;
 
-    cursor: pointer;
-
     transition: 0.4s ease;
 
     box-shadow:
-    0 0 15px rgba(0,229,255,0.5);
+    0 0 20px rgba(0,229,255,0.5);
+
+    position: relative;
+
+    z-index: 2;
 }
 
 
+
+.hero-btn:hover{
+
+    transform: scale(1.08);
+
+    box-shadow:
+    0 0 25px rgba(0,229,255,0.9),
+    0 0 60px rgba(0,229,255,0.5);
+}
 
 /* HERO BUTTON HOVER */
 
