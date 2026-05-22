@@ -401,23 +401,28 @@ body{
 
     overflow: hidden;
 
-    border-radius: 24px;
+    border-radius: 28px;
 
     background:
-    rgba(255,255,255,0.04);
+    linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.03));
 
     border:
     1px solid rgba(255,255,255,0.08);
 
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(18px);
 
-    transition: 0.4s ease;
+    transition: 0.45s ease;
 
     opacity: 0;
 
     transform: translateY(60px);
-}
 
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+}
 
 
 .card.show{
@@ -431,7 +436,12 @@ body{
 
 .card:hover{
 
-    transform: translateY(-8px);
+    transform:
+    translateY(-12px)
+    scale(1.02);
+
+    box-shadow:
+    0 20px 50px rgba(0,229,255,0.12);
 }
 
 
