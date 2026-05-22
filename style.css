@@ -801,3 +801,47 @@ body{
 
     visibility: hidden;
 }
+/* CUSTOM CURSOR */
+
+.cursor{
+
+    width: 20px;
+
+    height: 20px;
+
+    border-radius: 50%;
+
+    position: fixed;
+
+    background: #00e5ff;
+
+    pointer-events: none;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 999999;
+
+    box-shadow:
+    0 0 15px rgba(0,229,255,0.8),
+    0 0 40px rgba(0,229,255,0.5);
+
+    transition:
+    transform 0.08s linear;
+}
+
+
+
+/* HIDE DEFAULT CURSOR */
+
+body{
+
+    cursor: none;
+}
+
+
+
+a,
+button{
+
+    cursor: none;
+}
