@@ -420,6 +420,146 @@ body{
     background: #dce3ff;
 }
 
+/* JOURNEY SECTION */
+
+.journey{
+
+    padding: 140px 10%;
+}
+
+
+
+/* TIMELINE */
+
+.timeline{
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+
+/* CENTER LINE */
+
+.timeline::before{
+
+    content: "";
+
+    position: absolute;
+
+    left: 22px;
+
+    top: 0;
+
+    width: 2px;
+
+    height: 100%;
+
+    background:
+    rgba(255,255,255,0.12);
+}
+
+
+
+/* ITEM */
+
+.timeline-item{
+
+    position: relative;
+
+    padding-left: 80px;
+
+    margin-bottom: 70px;
+}
+
+
+
+/* DOT */
+
+.timeline-dot{
+
+    position: absolute;
+
+    left: 12px;
+
+    top: 8px;
+
+    width: 22px;
+
+    height: 22px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.4);
+}
+
+
+
+/* CONTENT */
+
+.timeline-content{
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    background:
+    rgba(255,255,255,0.04);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.4s ease;
+}
+
+
+
+/* HOVER */
+
+.timeline-content:hover{
+
+    transform: translateY(-5px);
+
+    background:
+    rgba(255,255,255,0.06);
+}
+
+
+
+/* TITLE */
+
+.timeline-content h3{
+
+    color: white;
+
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* TEXT */
+
+.timeline-content p{
+
+    color: #aeb9d6;
+
+    line-height: 32px;
+
+    font-size: 17px;
+
+    font-family: Arial, sans-serif;
+}
+
 /* SECTION TITLE */
 .section-title{
     text-align: center;
